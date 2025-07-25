@@ -1,60 +1,246 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-        <!-- このポートフォリオ、リニューアルしたい...-->
-        <meta charset="utf-8" />
-        <title>Nuxt.jsでWebサイトを作ってみる | minenaの部屋</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="minenaのPortfolio">
-        <meta property="og:url" content="https://nmst0811.github.io/portfolio/">
-        <meta property="og:description" content="Nuxt.jsでWebサイトを作ってみた。">
-        <meta property="og:site_name" content="minenaのPortfolio">
-        <meta property="og:locale" content="ja_JP">
-        <link rel="stylesheet" href="styles/main.css" />
-        <link rel="apple-touch-icon" href="./images/icon.png" sizes="180x180">
-        <link rel="icon" href="./images/icon.png" sizes = "192x192" type="image/png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer type="text/javascript"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Nuxt.jsでWebサイトを作ってみる | minenaの部屋</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="minenaのPortfolio">
+  <meta property="og:url" content="https://nmst0811.github.io/portfolio/">
+  <meta property="og:description" content="Nuxt.jsでWebサイトを作ってみた。">
+  <meta property="og:site_name" content="minenaのPortfolio">
+  <meta property="og:locale" content="ja_JP">
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="apple-touch-icon" href="./images/icon.png" sizes="180x180">
+  <link rel="icon" href="./images/icon.png" sizes="192x192" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer></script>
+</head>
 
-        <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
-  </head>
+<body>
+  <header>
+    <h1 class="headline"><a>minenaの部屋</a></h1>
+    <ul class="nav-list">
+      <li class="nav-list-item"><a href="https://nmst0811.github.io/portfolio/">About me</a></li>
+      <li class="nav-list-item"><a href="https://nmst0811.github.io/portfolio/#Works">Works</a></li>
+      <li class="nav-list-item"><a href="#Works">Article</a></li>
+      <li class="nav-list-item"><a href="https://nmst0811.github.io/portfolio/#Contact">Contact</a></li>
+    </ul>
+  </header>
 
-    <body>
-      <header>
-        <h1 class="headline">
-          <a>minenaの部屋</a>
-        </h1>
-        <ul class="nav-list">
-          <li class="nav-list-item"><a href="https://nmst0811.github.io/portfolio/">About me</a></li>
-          <li class="nav-list-item"><a href="https://nmst0811.github.io/portfolio/#Works">Works</a></li>
-          <li class="nav-list-item"><a href="#Works">Article</a></li>
-          <li class="nav-list-item"><a href="https://nmst0811.github.io/portfolio/#Contact">Contact</a></li>
-        </ul>
-      </header>
+  <main id="contents">
+    <br>
+    <h2>Nuxt.jsでWebサイトを作ってみる</h2>
+    <br>
+    <img class="articleImage" src="images/noimage.png" alt="Nuxt.jsでWebサイトを作ってみるのイメージ" />
 
-      
-      <div id="contents">
-        
-        <h2>Nuxt.jsでWebサイトを作ってみる</h2>
-        <img class="articleImage" src="images/noimage.png" alt="Nuxt.jsでWebサイトを作ってみる_image">
+    <p>
+      「Vue.jsでWebサイトを作るのは楽しい．でも，構成やルーティングが増えてくると面倒になるなあ」そう感じたことはありませんか？(・_・;)<br>
+      そんなときに頼れるのが，Vueベースのフレームワーク「Nuxt.js」です．Nuxtを使えば，プロジェクト構成，ルーティング，自動ビルドなどが一括で扱えるため，開発の効率が格段にアップします．
+    </p>
 
-      </div>
+    <br>
 
-      <div class="footer02">
-        <ul class="menu">
-          <li><a href="https://nmst0811.github.io/portfolio/">About me</a></li>
-          <li><a href="https://nmst0811.github.io/portfolio/#Works">Works</a></li>
-          <li><a href="#Works">Article</a></li>
-          <li><a href="https://nmst0811.github.io/portfolio/#Contact">Contact</a></li>
-        </ul>
-        <p class="copyright">
-          &copy; minena/Umamimi
-        </p>
-      </div>
-    </body>
+    <h3>Nuxt.jsとは？</h3>
+    <p>
+      Nuxt.jsは，Vue.jsをベースにしたアプリケーションフレームワークです．以下のような特徴があります：
+    </p>
+    <ul>
+      <li>ページベースのルーティング（ファイルを置くだけ）</li>
+      <li>サーバーサイドレンダリング（SSR）や静的サイト生成（SSG）の両対応</li>
+      <li>ホットリロード可能な開発サーバー</li>
+      <li>豊富な公式／非公式モジュール</li>
+    </ul>
+
+    <br><br>
+
+    <h3>SSRとは何か？</h3>
+    <p>
+      SSR（サーバーサイドレンダリング）とは，ユーザーのリクエストに応じて，サーバー側でHTMLを生成して返す仕組みです．検索エンジン対策（SEO）や初期表示の高速化が期待できます．
+    </p>
+    <p>
+      ただし，サーバー処理が必須となるため，静的なホスティング環境では扱いが難しいです．
+    </p>
+
+    <br><br>
+
+    <h3>今回は静的サイト構成（SSG）</h3>
+    <p>
+      本記事では，SSG（Static Site Generation）方式を採用します．これは事前にHTMLを生成し，静的にホスティングできるため，高速・安価・シンプルという利点があります．
+    </p>
+
+    <br><br>
+
+    <h3>開発環境を整える</h3>
+    <p>Node.js（v18以上）をインストールした上で，以下を実行します：</p>
+    <pre><code>npx nuxi init my-nuxt-app</code></pre>
+    <p>
+      ディレクトリが作成され，初期設定が自動生成されます．次に依存をインストールします：
+    </p>
+    <pre><code>cd my-nuxt-app
+npm install</code></pre>
+
+    <p>開発サーバーの起動：</p>
+    <pre><code>npm run dev</code></pre>
+    <p><code>http://localhost:3000</code> にアクセスすると初期画面が確認できます．</p>
+
+    <br><br>
+
+    <h3>プロジェクト構成</h3>
+    <pre><code>my-nuxt-app/
+├── app.vue
+├── nuxt.config.ts
+├── pages/
+│   └── index.vue
+├── components/
+└── public/
+</code></pre>
+    <ul>
+      <li><strong>app.vue：</strong>共通レイアウト</li>
+      <li><strong>pages/：</strong>ルーティングと対応する各ページ</li>
+      <li><strong>components/：</strong>再利用可能なUI部品</li>
+      <li><strong>nuxt.config.ts：</strong>グローバル設定</li>
+    </ul>
+
+    <br><br>
+
+    <h3>app.vueとNuxtPage</h3>
+    <pre><code>&lt;template&gt;
+  &lt;NuxtPage /&gt;
+&lt;/template&gt;
+</code></pre>
+    <p>
+      全ページの表示を統括する重要なポイントです．共通ナビゲーションなどをここで記述可能です．
+    </p>
+
+    <br><br>
+
+    <h3>ページの追加</h3>
+    <p><code>pages/about.vue</code>を作成するだけで自動的に<code>/about</code>ページが生成されます．</p>
+    <pre><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;h3&gt;このサイトについて&lt;/h3&gt;
+    &lt;p&gt;これはNuxtで作成したWebサイトです．&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+</code></pre>
+
+    <br><br>
+
+    <h3>コンポーネントの活用</h3>
+    <pre><code>&lt;template&gt;
+  &lt;Header /&gt;
+  &lt;main&gt;
+    &lt;NuxtPage /&gt;
+  &lt;/main&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+import Header from '~/components/Header.vue'
+&lt;/script&gt;
+</code></pre>
+
+    <br><br>
+
+    <h3>静的ビルドと公開</h3>
+    <p>以下のコマンドで静的HTMLを生成します：</p>
+    <pre><code>npm run build
+npm run generate</code></pre>
+    <p><code>.output/public/</code>配下に出力され，それをVercelやNetlifyへアップすればOKです．</p>
+
+    <br><br>
+
+    <h3>GitHub Pages へのデプロイ</h3>
+    <p>
+      Nuxt.jsで生成した静的サイトを，無料で公開できるサービスのひとつが <strong>GitHub Pages</strong> です．ここでは，NuxtプロジェクトをGitHubにアップロードし，静的ファイルをPagesにホスティングする手順を紹介します．
+    </p>
+  <br>
+    <h4>1. GitHub リポジトリの作成</h4>
+    <p>
+      まず，GitHub上で新しいリポジトリを作成します．リポジトリ名は任意ですが，ユーザー名.github.io とすると，ルートドメインで公開されます．
+    </p>
+    <br>
+    <h4>2. プロジェクトを初期化し，リポジトリにプッシュ</h4>
+    <pre><code>git init
+git remote add origin https://github.com/ユーザー名/リポジトリ名.git
+git add .
+git commit -m \"初回コミット\"
+git push -u origin main</code></pre>
+    <br>
+    <h4>3. 静的サイトを生成</h4>
+    <pre><code>npm run generate</code></pre>
+    <p>
+      これで <code>.output/public</code> ディレクトリに静的ファイルが生成されます．
+    </p>
+    <br>
+    <h4>4. GitHub Pages 用ブランチに配置</h4>
+    <p>
+      GitHub Pages は通常 <code>gh-pages</code> ブランチや <code>docs</code> フォルダを使って公開されます．以下の手順で <code>gh-pages</code> ブランチに静的ファイルをアップします．
+    </p>
+
+    <pre><code>git checkout --orphan gh-pages
+git reset --hard
+cp -r .output/public/* ./
+git add .
+git commit -m \"deploy\"
+git push origin gh-pages --force</code></pre>
+
+    <p>
+      もしくは，<code>gh-pages</code> パッケージを使って以下のように自動化もできます：
+    </p>
+
+    <pre><code>npm install --save-dev gh-pages
+npx gh-pages -d .output/public</code></pre>
+    <br>
+    <h4>5. GitHub上でPagesを有効化</h4>
+    <p>
+      GitHubのリポジトリ設定画面にある「Pages」セクションで，ブランチとして <code>gh-pages</code> を選び，ルートを指定して保存すれば，数十秒後にサイトが公開されます．
+    </p>
+
+    <p>
+      公開URLは通常 <code>https://ユーザー名.github.io/リポジトリ名/</code> の形式になります．
+    </p>
+
+    <br>
+    <h4>補足：Base URL の設定</h4>
+    <p>
+      サブディレクトリ（例：<code>ユーザー名.github.io/nuxt-site/</code>）でホスティングする場合は，Nuxtの設定でベースURLを指定する必要があります：
+    </p>
+
+    <pre><code>// nuxt.config.ts
+    export default defineNuxtConfig({
+      app: {
+        baseURL: '/リポジトリ名/'
+      }
+    })</code></pre>
+
+    <p>
+      この設定を忘れると，CSSやルーティングが正しく動作しなくなるため注意が必要です．(；・∀・)
+    </p>
+    <br>
+    <h3>おわりに</h3>
+    <p>
+      Nuxt.jsを活用すれば，Vueの柔軟性を保ちながら効率よく静的サイトを構築できます．初めての方にもおすすめの構成です．(｀・ω・´)
+    </p>
+
+    <p class="updated-note">
+      ※この記事の内容は，2025年7月時点の情報に基づいています．
+    </p>
+  </main>
+
+  <footer class="footer02">
+    <ul class="menu">
+      <li><a href="https://nmst0811.github.io/portfolio/">About me</a></li>
+      <li><a href="https://nmst0811.github.io/portfolio/#Works">Works</a></li>
+      <li><a href="#Works">Article</a></li>
+      <li><a href="https://nmst0811.github.io/portfolio/#Contact">Contact</a></li>
+    </ul>
+    <p class="copyright">&copy; minena/Umamimi</p>
+  </footer>
+</body>
 </html>
